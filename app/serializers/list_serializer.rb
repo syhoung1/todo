@@ -1,3 +1,5 @@
 class ListSerializer < ActiveModel::Serializer
-  attributes :id, :items, :user
+  attributes :id
+  has_many :items
+  belongs_to :user
 end
